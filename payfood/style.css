@@ -1,0 +1,196 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url("assets/Montserrat-VariableFont_wght.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: rgba(255, 255, 255, 0.603);
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 1px solid #666;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    gap: 900px;
+    align-items: center;
+    padding: 0 20px;
+}
+nav img {
+    width: 181px;
+    height: 66px;
+    margin: 12px;
+}
+
+nav button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+
+.hero {
+    display: flex;
+    margin-top: 80px;
+    position: relative;
+    height: calc(100vh - 80px);
+}
+
+.hero_gauche {
+    width: 50%;
+    background-color: #e5093f;
+    color: white;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero_gauche h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    transform: translateY(-50%);
+}
+
+.hero_droite {
+    width: 50%;
+    position: relative;
+    background-image: url("./images/groupe.webp");
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+
+.hero_droite form {
+    position: absolute;
+    right: 80px;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    background: rgba(255, 255, 255, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.hero_droite form input[type="text"],
+.hero_droite form input[type="number"],
+.hero_droite form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.hero_droite form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #e5093f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.hero_droite form h1 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.hero_bas {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    background-color: #d89aa5;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.fonctionnalités {
+    padding: 50px 10%;
+    font-family: 'Arial', sans-serif;
+    text-align: left;
+}
+
+.fonctionnalités h3 {
+    color: #e91e63; 
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.fonctionnalités h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    max-width: 600px;
+    line-height: 1.2;
+}
+
+.fonctionnalités {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.imgfeatures {
+    flex: 1; 
+    min-width: 250px; 
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden; 
+    border: 1px solid #eee;
+}
+
+.imgfeatures img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.imgfeatures p:first-of-type {
+    font-weight: bold;
+    padding: 15px 15px 5px 15px;
+    margin: 0;
+    color: #000;
+}
+
+.imgfeatures p:last-of-type {
+    padding: 0 15px 20px 15px;
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.4;
+}
+
+
+
+
