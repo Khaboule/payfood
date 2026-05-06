@@ -21,7 +21,7 @@ header {
     background-color: white;
     position: fixed;
     top: 0;
-    
+
     width: 100%;
     z-index: 1000;
     border-bottom: 1px solid #666;
@@ -35,6 +35,7 @@ nav {
     align-items: center;
     padding: 0 20px;
 }
+
 nav img {
     width: 181px;
     height: 66px;
@@ -135,62 +136,88 @@ nav button {
 }
 
 .fonctionnalités {
-    padding: 50px 10%;
-    font-family: 'Arial', sans-serif;
-    text-align: left;
+
+    min-height: calc(100vh - 90px);
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 60px 10%;
+    box-sizing: border-box;
 }
 
+
 .fonctionnalités h3 {
-    color: #e91e63; 
+    color: #e5093f;
+
     font-size: 14px;
     letter-spacing: 2px;
+    margin-bottom: 15px;
 }
 
 .fonctionnalités h2 {
-    font-size: 32px;
+    font-size: 36px;
     font-weight: bold;
-    margin-bottom: 40px;
-    max-width: 600px;
-    line-height: 1.2;
-}
-
-.fonctionnalités {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.imgfeatures {
-    flex: 1; 
-    min-width: 250px; 
-    background: #fff;
-    border-radius: 8px;
-    overflow: hidden; 
-    border: 1px solid #eee;
-}
-
-.imgfeatures img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.imgfeatures p:first-of-type {
-    font-weight: bold;
-    padding: 15px 15px 5px 15px;
-    margin: 0;
     color: #000;
-}
+    line-height: 1.2;
+    max-width: 700px;
+    margin-bottom: 50px;
 
-.imgfeatures p:last-of-type {
-    padding: 0 15px 20px 15px;
-    margin: 0;
-    font-size: 14px;
-    color: #666;
-    line-height: 1.4;
-}
+    .cardcontent {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        margin: 40px 0;
+    }
+
+    .imgfeatures {
+        flex: 1;
+
+        background: #fff;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+
+        border: 1px solid #eee;
+        display: flex;
+        flex-direction: column;
+    }
 
 
+    .imgfeatures img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+
+    }
 
 
+    .imgfeatures p:first-of-type {
+        font-weight: bold;
+        padding: 15px 15px 5px 15px;
+        font-size: 16px;
+        color: #000;
+    }
+
+    .imgfeatures p:last-of-type {
+        padding: 0 15px 20px 15px;
+        font-size: 14px;
+        color: #666;
+        line-height: 1.4;
+    }
+
+    .btn {
+        display: block;
+        margin: 40px auto 0 auto;
+        background-color: #e5093f;
+        color: white;
+        border: none;
+        padding: 15px 30px;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+    }
