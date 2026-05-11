@@ -79,7 +79,7 @@ nav button {
 .hero_droite {
     width: 50%;
     position: relative;
-    background-image: url("./images/groupe.webp");
+    background-image: url("./images/groupe.svg");
     background-size: cover;
     background-position: center right;
     background-repeat: no-repeat;
@@ -165,59 +165,88 @@ nav button {
     line-height: 1.2;
     max-width: 700px;
     margin-bottom: 50px;
+}
 
-    .cardcontent {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        gap: 20px;
-        margin: 40px 0;
-    }
+.cardcontent {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 40px 0;
+}
 
-    .imgfeatures {
-        flex: 1;
+.imgfeatures {
+    flex: 1;
 
-        background: #fff;
-        border-radius: 12px;
-        overflow: hidden;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 
-        border: 1px solid #eee;
-        display: flex;
-        flex-direction: column;
-    }
-
-
-    .imgfeatures img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-
-    }
+    border: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+}
 
 
-    .imgfeatures p:first-of-type {
-        font-weight: bold;
-        padding: 15px 15px 5px 15px;
-        font-size: 16px;
-        color: #000;
-    }
+.imgfeatures img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 
-    .imgfeatures p:last-of-type {
-        padding: 0 15px 20px 15px;
-        font-size: 14px;
-        color: #666;
-        line-height: 1.4;
-    }
+}
 
-    .btn {
-        display: block;
-        margin: 40px auto 0 auto;
-        background-color: #e5093f;
-        color: white;
-        border: none;
-        padding: 15px 30px;
-        border-radius: 5px;
-        font-weight: bold;
-        cursor: pointer;
-    }
+
+.imgfeatures p:first-of-type {
+    font-weight: bold;
+    padding: 15px 15px 5px 15px;
+    font-size: 16px;
+    color: #000;
+}
+
+.imgfeatures p:last-of-type {
+    padding: 0 15px 20px 15px;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.4;
+}
+
+.btn {
+    display: block;
+    margin: 40px auto 0 auto;
+    background-color: #e5093f;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.scan {
+    width: 100%;
+    position: relative;
+    background-image: url("./images/steak.png");
+    background-size: cover;
+    background-position: center ;
+    background-repeat: no-repeat;
+}
+
+.scan_gauche {
+    display: flex;
+    flex-wrap: wrap;
+    width: 20px;
+    height: 40px;
+    position: absolute;
+    left: 80px;
+    top: 50%;
+    flex-direction: column;
+}
+
+.scan_droite {
+    width: 50%;
+    position: relative;
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+}
